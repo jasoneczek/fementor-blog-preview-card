@@ -11,12 +11,8 @@ This is a solution to the [Blog preview card challenge on Frontend Mentor](https
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -26,22 +22,16 @@ Users should be able to:
 
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+![](/assets/images/screenshot.png)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](/assets/images/screenshot-active.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [My solution on my Frontend Mentor profile](https://www.frontendmentor.io/solutions/blog-preview-card-with-fluid-text-sizes-4TxTONa4OE)
+- Live Site URL: [Live](https://fementor-blog-preview-card-kohl.vercel.app/)
 
 ## My process
 
@@ -50,63 +40,34 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In creating this project I gained some valuable CSS skills and insights into best practices. Here are some key takeaways:
 
-To see how you can add code snippets, see below:
+Custom Fonts with `@font-face`
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- Utilized @font-face to incorporate custom fonts (Figtree) into the project, specifying different weights (500 and 800) for various text elements.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+CSS Variables and Typography
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+- Employed CSS variables (`--clr-primary`, `--fw-reg`, etc.) for consistent color schemes and typography throughout the project.
+- Utilized `clamp()` for responsive typography `--fs-sml`, --`fs-md`, `fs-lg` ensuring readability across different screen sizes.
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+Accessibility and User Interaction
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+- I employed the pseudo-element `::before` on the anchor `<a>` tag within the card header to extend the clickable area of the card while maintaining semantic HTML structure and accessibility.
+- I incorporated a hover effect using the `:hover` pseudo-class on the card header, enhancing user interaction by providing visual feedback when users hover over the elements.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Stop Making This BIG Mistake With Clickable Cards](https://www.youtube.com/watch?v=nM78am-FC9Q) - This YouTube video helped me understand how important it is to properly link clickable content for accessibilty.
+- [Inclusive Components - Cards](https://inclusive-components.design/cards/) - This article beautifully explains how to make an entire card clickable properly and have hover/focus states.
+- [This YouTube video by Kevin Powell](https://inclusive-components.design/cards/) demonstrates the min(), max(), and clamp() CSS functions, which helped me with responsive font sizes.
+- [Supercharged CSS Variables](https://open-props.style/#typography) - Another site worth bookmarking for reference.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Github - [@jasoneczek](https://github.com/jasoneczek)
+- Frontend Mentor - [@jasoneczek](https://www.frontendmentor.io/profile/jasoneczek)

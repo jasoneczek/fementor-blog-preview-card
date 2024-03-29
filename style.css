@@ -92,7 +92,7 @@ a {
 
 .pub-date {
   font-size: var(--fs-sml);
-  color: var(--clr-gray);
+  color: var(--clr-black);
   font-weight: var(--fw-reg);
   margin: 1rem 0;
 }

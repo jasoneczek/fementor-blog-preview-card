@@ -12,6 +12,20 @@
   src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format('truetype');
 }
 
+:root {
+  /* colors */
+  --clr-primary: hsl(47, 88%, 63%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gray: hsl(0, 0%, 50%);
+  --clr-black: hsl(0, 0%, 7%);
+  /* typography */
+  --fw-reg: 500;
+  --fw-bold: 800;
+  --fs-sml: clamp(0.8125rem, 1.5vw, 0.9375rem);
+  --fs-md: clamp(0.9375rem, 2vw, 1rem);
+  --fs-lg: clamp(1.4rem, 2.5vw, 1.6rem);
+  }
+
 *,
 *::before,
 *::after {
@@ -27,14 +41,127 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: Figtree, sans-serif;
+  background-color: var(--clr-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
   color: currentColor;
+  cursor: pointer;
 }
 
-img {
+.card-img {
   max-width: 100%;
   display: block;
+  border-radius: 0.625rem;
+  margin-bottom: 1.3rem;
+  object-fit: cover;
+  aspect-ratio: 277/200;
+}
+
+.card {
+  position: relative;
+  max-width: 23.75rem;
+  margin: 0 1.2rem;
+  background-color: var(--clr-white);
+  padding: 1.3rem;
+  border-radius: 1rem;
+  border: 1px solid var(--clr-black);
+  box-shadow: 0.5rem 0.5rem var(--clr-black);
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover,
+.card:focus-within {
+  box-shadow: 1rem 1rem var(--clr-black);
+}
+
+.tag {
+  background-color: var(--clr-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-sml);
+  color: var(--clr-black);
+  display: inline-block;
+}
+
+.pub-date {
+  font-size: var(--fs-sml);
+  color: var(--clr-gray);
+  font-weight: var(--fw-reg);
+  margin: 1rem 0;
+}
+
+.card-header {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1rem;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card-header a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+.card-header a:hover,
+.card-header a:focus-within {
+  color: var(--clr-primary);
+}
+
+.card-header a:focus {
+  outline: none;
+}
+
+.card-text {
+  font-size: var(--fs-md);
+  color: var(--clr-gray);
+  font-weight: var(--fw-reg);
+  margin-bottom: 1rem;
+}
+
+.author-attr {
+  display: flex;
+  align-items: center;
+}
+
+.author-img {
+  margin: 0 0.8rem 0 0;
+  max-width: 2.25rem;
+}
+
+.author-name {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-md);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: var(--fs-sml);
+  color: var(--clr-gray);
+  padding: 0.875rem;
+}
+
+.footer-link {
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link:hover {
+  opacity: 0.8;
+}
+
+.github-logo {
+  margin: 0 0.5rem 0 0.25rem;
 }
